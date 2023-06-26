@@ -24,7 +24,7 @@ const NavBar = () => {
         <li><Link>About</Link></li>
     </>
     return (
-        <div className={`fixed w-full  z-10 top-0 text-white transition duration-700 ease-in-out ${isScrolled ? 'bg-[#040c16]' : 'bg-transparent'} `} >
+        <div className={`fixed w-full  z-10 top-0 text-white  transition duration-700 ease-in-out ${isScrolled ? 'bg-[#040c16]' : 'bg-transparent'} `} >
             <div className="max-w-screen-xl mx-auto">
                 <div className="navbar  ">
                     <div className="navbar-start">
@@ -36,7 +36,7 @@ const NavBar = () => {
                                 {navOptions}
                             </ul>
                         </div>
-                        <a className="btn btn-ghost normal-case text-xl">Syed Alamin</a>
+                        <h2 className="">Syed Alamin</h2>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">

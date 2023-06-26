@@ -1,25 +1,12 @@
+import Banner from "../Banner/Banner";
+import SocialLink from "../SocialLink/SocialLink";
 
 const Home = () => {
     return (
-       <>
-        <div className="h-96">
-            <h2>this is home</h2>
-        </div>
-        <div className="h-96">
-            <h2>this is home</h2>
-        </div>
-        <div className="h-96">
-            <h2>this is home</h2>
-        </div>
-        <div className="h-96">
-            <h2>this is home</h2>
-        </div>
-        <div className="h-96">
-            <h2>this is home</h2>
-        </div>
-        <div className="h-96">
-            <h2>this is home</h2>
-        </div></>
+        <>
+            <Banner></Banner>
+            <SocialLink></SocialLink>
+        </>
     );
 };
 
