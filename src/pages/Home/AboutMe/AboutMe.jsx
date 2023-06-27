@@ -1,8 +1,19 @@
 import Tilt from 'react-parallax-tilt';
-import { HiArrowNarrowRight } from "react-icons/hi";
+import { HiDownload } from "react-icons/hi";
+const PDF_FILE_URL = 'http://localhost:5173/SyedAlaminResume.pdf';
 const AboutMe = () => {
+    const downloadFileAtURL = (url)=>{
+        const fileName = url.split('/').pop();
+        const aTag = document.createElement('a');
+        aTag.href=url;
+        aTag.setAttribute('download', fileName);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+    }
     return (
         <div className='relative ' id='about'>
+            
             <div className="h-full">
                 <div className="rounded-full filter blur-3xl absolute top-0 left-0 h-96 w-96  bg-gradient-to-l from-blue-500 to-sky-400   opacity-30 "></div>
                 <div className="rounded-full filter blur-3xl absolute top-24 right-28 h-96 w-96   bg-gradient-to-r from-violet-600 to-indigo-800  opacity-10 "></div>
@@ -21,7 +32,7 @@ const AboutMe = () => {
                             <p className='py-5'> As a junior React developer, I bring a fresh perspective and an unwavering determination to overcome challenges. I am confident that my dedication and enthusiasm for the field will enable me to make valuable contributions to your organization and help drive its success</p>
                             <p><span className='text-[#9bb4f1]'>Email: </span> syedalamin2580@gmail.com</p>
                             <p className='py-5'><span className='text-[#9bb4f1]'>Place: </span> Tangail-1900 , Bangladesh</p>
-                            <button className="bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 border rounded-md mt-5 py-2 px-5 flex items-center ">Resume <span className=' mt-1 ps-1'> <HiArrowNarrowRight></HiArrowNarrowRight></span></button>
+                            <button onClick={()=>{downloadFileAtURL(PDF_FILE_URL)}} className="bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 border rounded-md mt-5 py-2 px-5 flex items-center ">Resume <span className=' mt-1 ps-1'> <HiDownload ></HiDownload></span></button>
                         </div>
                     </div>
                 </div>
