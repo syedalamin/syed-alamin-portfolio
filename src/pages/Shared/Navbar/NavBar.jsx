@@ -44,7 +44,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <a className="btn">LETS TALK</a>
+                        <button className="bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 border     rounded-md mt-5 py-2 px-5">LETS TALK</button>
                     </div>
                 </div>
             </div>
