@@ -2,7 +2,7 @@ import Tilt from 'react-parallax-tilt';
 import { HiArrowNarrowRight } from "react-icons/hi";
 const AboutMe = () => {
     return (
-        <div className='relative '>
+        <div className='relative ' id='about'>
             <div className="h-full">
                 <div className="rounded-full filter blur-3xl absolute top-0 left-0 h-96 w-96  bg-gradient-to-l from-blue-500 to-sky-400   opacity-30 "></div>
                 <div className="rounded-full filter blur-3xl absolute top-24 right-28 h-96 w-96   bg-gradient-to-r from-violet-600 to-indigo-800  opacity-10 "></div>

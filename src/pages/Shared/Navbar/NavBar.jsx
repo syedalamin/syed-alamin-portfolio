@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+
 
 
 const NavBar = () => {
@@ -20,8 +20,8 @@ const NavBar = () => {
     }, []);
 
     const navOptions = <>
-        <li><Link>Home</Link></li>
-        <li><Link>About</Link></li>
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#about">About</a></li>
     </>
     return (
         <div className={`fixed w-full  z-10 top-0 text-white  transition duration-700 ease-in-out ${isScrolled ? 'bg-[#040c16]' : 'bg-transparent'} `} >

@@ -78,7 +78,7 @@ const Project = () => {
                                 </div>
                             </div>
                             <div className=" mx-auto w-10/12 py-4 text-center">
-                                <h2 className="items-center justify-center card-title">Action Figure</h2>
+                                <h2 className="items-center justify-center card-title">Tea House</h2>
                                 <div className="flex justify-around">
                                     <Link to='https://sa-tea-house.netlify.app' target="blank"><button className="bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 border  rounded-full mt-5  px-5 flex items-center">Live Site</button></Link>
                                 </div>
@@ -93,7 +93,7 @@ const Project = () => {
                                 </div>
                             </div>
                             <div className=" mx-auto w-10/12 py-4 text-center">
-                                <h2 className="items-center justify-center card-title">Action Figure</h2>
+                                <h2 className="items-center justify-center card-title">Dream Job</h2>
                                 <div className="flex justify-around">
                                     <Link to='https://illustrious-seahorse-34b9fa.netlify.app' target="blank"><button className="bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 border  rounded-full mt-5  px-5 flex items-center">Live Site</button></Link>
                                 </div>
