@@ -5,12 +5,12 @@ import Tilt from 'react-parallax-tilt';
 const AboutMe = () => {
     
     return (
-        <div className='relative py-10' id='about'>
+        <div className='relative ' id='about'>
             
-            {/* <div className="h-full">
-                <div className="rounded-full filter blur-3xl absolute top-0 left-0 h-96 w-96  bg-gradient-to-l from-blue-500 to-sky-400   opacity-30 "></div>
-                <div className="rounded-full filter blur-3xl absolute top-24 right-28 h-96 w-96   bg-gradient-to-r from-violet-600 to-indigo-800  opacity-10 "></div>
-            </div> */}
+            <div className="w-full">
+                <div className="rounded-full filter blur-3xl absolute top-0 right-0 h-96 sm:w-96  w-full bg-gradient-to-r from-violet-600 to-indigo-800   opacity-10 "></div>
+                <div className="rounded-full filter blur-3xl absolute  sm:top-0 top-96 left-0 sm:h-96 h-96 sm:w-96  w-full sm:-rotate-45  bg-gradient-to-l from-blue-500 to-sky-400   opacity-10 "></div>
+            </div>
             <div className="mx-auto max-w-screen-xl pb-10">
                 <h2 className='text-center text-2xl pb-10 font-bold' >About Me</h2>
                 <div className="grid sm:grid-cols-2 w-11/12 mx-auto">
@@ -19,17 +19,17 @@ const AboutMe = () => {
                             <img src="https://i.ibb.co/n8D4zqb/sasa.png" className="w-7/12 drop-shadow-lg grayscale hover:grayscale-0  mx-auto bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-20  rounded-md" alt="" />
                         </div>
                     </Tilt>
-                    <div className='flex items-center'>
-                        <div>
-                            <h2 className='text-4xl font-semibold'>I am Available For  Web Site <br /> Design  and Develop Projects</h2>
-                            <p className='py-5'> As a junior React developer, I bring a fresh perspective and an unwavering determination to overcome challenges. I am confident that my dedication and enthusiasm for the field will enable me to make valuable contributions to your organization and help drive its success</p>
+                    <div className='flex items-center py-5'>
+                        <div className="space-y-2 sm:space-y-4">
+                            <h2 className='sm:text-4xl text-2xl font-semibold'>I am Available For  Web Site <br /> Design  and Develop Projects</h2>
+                            <p className=''> As a junior React developer, I bring a fresh perspective and an unwavering determination to overcome challenges. I am confident that my dedication and enthusiasm for the field will enable me to make valuable contributions to your organization and help drive its success</p>
                             <p><span className='text-[#9bb4f1]'>Email: </span> syedalamin2580@gmail.com</p>
-                            <p className='py-5'><span className='text-[#9bb4f1]'>Place: </span> Tangail-1900 , Bangladesh</p>
+                            <p className=''><span className='text-[#9bb4f1]'>Place: </span> Tangail-1900 , Bangladesh</p>
                             <Link activeClass="active"
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={500} to="contact"><button className="bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 border  rounded-md mt-5 py-2 px-5 flex items-center">Hire Me  <span className=' mt-1 ps-1'> <HiArrowNarrowRight></HiArrowNarrowRight> </span></button>
+                            duration={500} to="contact"><button className="bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 border  rounded-md sm:mt-5 sm:py-2 sm:px-5 py-1 px-2 mt-2 flex items-center">Hire Me  <span className=' mt-1 ps-1'> <HiArrowNarrowRight></HiArrowNarrowRight> </span></button>
                             </Link>
                             
                         </div>
