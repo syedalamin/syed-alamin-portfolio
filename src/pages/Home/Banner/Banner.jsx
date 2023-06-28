@@ -1,7 +1,25 @@
-import { HiArrowNarrowRight } from "react-icons/hi";
-import { Link } from "react-scroll";
+import { HiDownload } from "react-icons/hi";
+import Swal from 'sweetalert2';
+const PDF_FILE_URL = 'https://syed-alamin-portfolio.vercel.app/SyedAlaminResume.pdf';
 
 const Banner = () => {
+    const downloadFileAtURL = (url)=>{
+        const fileName = url.split('/').pop();
+        const aTag = document.createElement('a');
+        aTag.href=url;
+        aTag.setAttribute('download', fileName);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Download Success',
+            showConfirmButton: false,
+            timer: 2000
+          })
+        
+    }
     return (
         <div className="relative pt-10 sm:pt-0" id="banner">
             <div className="">
@@ -15,12 +33,7 @@ const Banner = () => {
                             <h2 className="text-5xl font-semibold">Hey, I am Syed Alamin</h2>
                             <h3 className="text-6xl font-bold py-5">Web Developer</h3>
                             <p className=""> As a junior React developer, I bring a fresh perspective and an unwavering determination to overcome challenges. I am confident that my dedication and enthusiasm for the field will enable me to make valuable contributions to your organization and help drive its success</p>
-                            <Link activeClass="active"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500} to="contact"><button className="bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 border  rounded-md mt-5 py-2 px-5 flex items-center">Hire Me  <span className=' mt-1 ps-1'> <HiArrowNarrowRight></HiArrowNarrowRight> </span></button></Link>
-                       
+                            <button onClick={()=>{downloadFileAtURL(PDF_FILE_URL)}} className="bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 border rounded-md mt-5 py-2 px-5 flex items-center ">Resume <span className=' mt-1 ps-1'> <HiDownload ></HiDownload></span></button>
                         </div>
                     </div>
                     <div>
