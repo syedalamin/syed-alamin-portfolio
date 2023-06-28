@@ -1,7 +1,7 @@
 import Tilt from 'react-parallax-tilt';
 import { HiDownload } from "react-icons/hi";
 import Swal from 'sweetalert2';
-const PDF_FILE_URL = 'http://localhost:5173/SyedAlaminResume.pdf';
+const PDF_FILE_URL = 'https://syed-alamin-portfolio.vercel.app/SyedAlaminResume.pdf';
 const AboutMe = () => {
     const downloadFileAtURL = (url)=>{
         const fileName = url.split('/').pop();
