@@ -29,15 +29,15 @@ const Contact = () => {
     };
     return (
         <div className='relative'>
-             {/* <div className="h-full">
-                <div className="rounded-full filter blur-3xl absolute top-24 right-28 h-60 w-96   bg-gradient-to-r  from-blue-500 to-sky-400  opacity-20 "></div>
-            </div> */}
-            <div className="mx-auto w-11/12 sm:max-w-screen-xl py-10  z-50 " id='contact'>
+              <div className="w-full">
+                <div className="rounded-full filter blur-3xl absolute  sm:top-0 top-96 right-0 sm:h-96 h-96 sm:w-96  w-full   bg-gradient-to-l from-blue-500 to-sky-400   opacity-20 "></div>
+            </div>
+            <div className="mx-auto w-11/12 sm:max-w-screen-xl   z-50 " id='contact'>
                 <h2 className='text-center text-2xl pb-10 font-bold' >Contact Me</h2>
 
                 <div className='grid md:grid-cols-7 '>
                     <div className=' w-full md:col-span-3 space-y-5'>
-                        <h2 className='text-5xl font-bold'>Let s Discuss Your Project</h2>
+                        <h2 className='sm:text-5xl font-bold text-3xl'>Let s Discuss Your Project</h2>
                         <p className=''>Always available for freelancing if the right project comes along, <br /> Feel free to contact me.</p>
                         <div className='space-x-5  '>
                             <Link target='blank' to='https://www.facebook.com/syed.tutul.dark.spider'>

@@ -10,14 +10,14 @@ import { Link } from "react-router-dom";
 
 const Project = () => {
     return (
-        <div className="relative">
-            {/* <div className="h-full">
-                <div className="rounded-full filter blur-3xl absolute top-0 left-0 h-96 w-96  bg-gradient-to-l from-blue-500 to-sky-400   opacity-30 "></div>
-                <div className="rounded-full filter blur-3xl absolute top-24 right-28 h-96 w-96   bg-gradient-to-r from-violet-600 to-indigo-800  opacity-10 "></div>
-            </div> */}
-            <div className="mx-auto w-11/12 sm:max-w-screen-xl py-10 " id="project">
-                <h2 className='text-center text-2xl pb-10 font-bold' >My Project</h2>
-                <div className="">
+        <div className="relative ">
+             <div className="w-full">
+                <div className="rounded-full filter blur-3xl absolute top-0 right-0 h-96 sm:w-96  w-full bg-gradient-to-r from-violet-600 to-indigo-800   opacity-20 "></div>
+                <div className="rounded-full filter blur-3xl absolute  sm:top-0 top-96 left-0 sm:h-96 h-96 sm:w-96  w-full sm:-rotate-45  bg-gradient-to-l from-blue-500 to-sky-400   opacity-20 "></div>
+            </div>
+            <div className="mx-auto w-11/12 pb-10 sm:max-w-screen-xl " id="project">
+                <h2 className='text-center text-2xl  font-bold' >My Project</h2>
+                <div className="mt-5 ">
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={10}
@@ -41,7 +41,7 @@ const Project = () => {
                             pauseOnMouseEnter: true,
                         }}
                         modules={[Pagination, Autoplay]}
-                        className="mySwiper"
+                        className="mySwiper "
                     >
                         <SwiperSlide>
                             <div className="card w-fit bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 overflow-auto shadow-xl">
