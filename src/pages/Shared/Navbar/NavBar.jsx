@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, } from 'react-scroll';
-
+import {LiaBarsSolid} from 'react-icons/lia';
 
 
 const NavBar = () => {
@@ -19,6 +19,12 @@ const NavBar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleNavigation = () => {
+        setIsOpen(!isOpen);
+    };
 
     const navOptions = <>
         <li>
@@ -66,11 +72,14 @@ const NavBar = () => {
                     <div className="navbar-start">
                         <div className="dropdown">
                             <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                                <button className="text-2xl" onClick={toggleNavigation}><LiaBarsSolid></LiaBarsSolid></button>
                             </label>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#0b1120] rounded-box w-52">
-                                {navOptions}
-                            </ul>
+                            {isOpen && (
+                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#0b1120] rounded-box w-52">
+                                    {navOptions}
+                                </ul>
+                            )}
+
                         </div>
                         <h2 className="sm:text-2xl font-bold">Syed Alamin</h2>
                     </div>
