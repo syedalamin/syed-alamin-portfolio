@@ -53,7 +53,7 @@ const NavBar = () => {
             duration={500} to="contact">Contact</Link></li>
     </>
     return (
-        <div className={`fixed w-full  z-10 top-0 text-white  transition duration-700 ease-in-out ${isScrolled ? 'bg-[#040c16]' : 'bg-transparent'} `} >
+        <div className={`fixed w-full  z-10 top-0 text-white  transition duration-700 ease-in-out ${isScrolled ? 'bg-[#0b1120] shadow-lg shadow-indigo-800/20' : 'bg-transparent'} `} >
             <div className="max-w-screen-xl mx-auto">
                 <div className="navbar  ">
                     <div className="navbar-start">

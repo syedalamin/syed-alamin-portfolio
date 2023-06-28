@@ -28,7 +28,11 @@ const Contact = () => {
             });
     };
     return (
-        <div>
+        <div className='relative'>
+             <div className="h-full">
+                <div className="rounded-full filter blur-3xl absolute top-0 left-0 h-96 w-96  bg-gradient-to-r from-violet-600 to-indigo-800    opacity-20 "></div>
+                <div className="rounded-full filter blur-3xl absolute top-24 right-28 h-60 w-96   bg-gradient-to-r  from-blue-500 to-sky-400  opacity-20 "></div>
+            </div>
             <div className="mx-auto w-11/12 sm:max-w-screen-xl py-10  " id='contact'>
                 <h2 className='text-center text-2xl pb-10 font-bold' >Contact Me</h2>
 
