@@ -71,8 +71,8 @@ const NavBar = () => {
                 <div className="navbar w-full ">
                     <div className="navbar-start">
                         <div className="dropdown">
-                            <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                                <button className="text-2xl" onClick={toggleNavigation}><LiaBarsSolid></LiaBarsSolid></button>
+                            <label tabIndex={0} className="btn px-0  pr-3  btn-ghost lg:hidden">
+                                <button className="text-2xl "  onClick={toggleNavigation}><LiaBarsSolid></LiaBarsSolid></button>
                             </label>
                             {isOpen && (
                                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#0b1120] rounded-box w-52">
