@@ -22,9 +22,9 @@ const Banner = () => {
     }
     return (
         <div className="relative " id="banner">
-            <div className="w-screen">
-                <div className="rounded-full filter blur-3xl absolute top-0 right-0 sm:h-96 sm:w-96  bg-gradient-to-l from-blue-500 to-sky-400   opacity-30 "></div>
-                <div className="rounded-full filter blur-3xl absolute top-[120px] left-0 sm:h-96 sm:w-96 -rotate-45   bg-gradient-to-r from-violet-600 to-indigo-800   opacity-10 "></div>
+            <div className="w-full">
+                <div className="rounded-full filter blur-3xl absolute top-0 right-0 h-96 sm:w-96  w-full bg-gradient-to-l from-blue-500 to-sky-400   opacity-30 "></div>
+                <div className="rounded-full filter blur-3xl absolute sm:top-[120px] top-96 left-0 h-96 sm:w-96  w-full sm:-rotate-45   bg-gradient-to-r from-violet-600 to-indigo-800   opacity-10 "></div>
             </div>
             <div className="pt-12 sm:max-w-screen-xl w-11/12 mx-auto ">
                 <div className="sm:grid sm:grid-cols-2 flex  flex-col-reverse ">
