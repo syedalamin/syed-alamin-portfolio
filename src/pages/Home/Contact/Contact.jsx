@@ -29,7 +29,7 @@ const Contact = () => {
     };
     return (
         <div>
-            <div className="mx-auto w-11/12 sm:max-w-screen-xl py-10 ">
+            <div className="mx-auto w-11/12 sm:max-w-screen-xl py-10  " id='contact'>
                 <h2 className='text-center text-2xl pb-10 font-bold' >Contact Me</h2>
 
                 <div className='grid md:grid-cols-7 '>
@@ -37,17 +37,17 @@ const Contact = () => {
                         <h2 className='text-5xl font-bold'>Let s Discuss Your Project</h2>
                         <p className=''>Always available for freelancing if the right project comes along, <br /> Feel free to contact me.</p>
                         <div className='space-x-5 '>
-                            <Link>
+                            <Link target='blank' to='https://www.facebook.com/syed.tutul.dark.spider'>
                                 <button className="btn btn-circle bg-[#3b5998] hover:bg-[#3b5998] text-white hover:-translate-y-2 duration-500">
                                    <FaFacebookF className='text-lg'></FaFacebookF>
                                 </button>
                             </Link>
-                            <Link>
+                            <Link target='blank' to='https://twitter.com/syedprogrammer'>
                                 <button className="btn btn-circle bg-[#00acee] hover:bg-[#00acee] text-white hover:-translate-y-2 duration-500">
                                    <FaTwitter className='text-lg'></FaTwitter>
                                 </button>
                             </Link>
-                            <Link>
+                            <Link target='blank' to='https://www.linkedin.com/in/syedalamin/'>
                                 <button className="btn btn-circle bg-[#0072b1] hover:bg-[#0072b1] text-white hover:-translate-y-2 duration-500">
                                    <FaLinkedinIn className='text-lg'></FaLinkedinIn>
                                 </button>

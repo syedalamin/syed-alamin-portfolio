@@ -1,5 +1,6 @@
 import Tilt from 'react-parallax-tilt';
 import { HiDownload } from "react-icons/hi";
+import Swal from 'sweetalert2';
 const PDF_FILE_URL = 'http://localhost:5173/SyedAlaminResume.pdf';
 const AboutMe = () => {
     const downloadFileAtURL = (url)=>{
@@ -10,9 +11,17 @@ const AboutMe = () => {
         document.body.appendChild(aTag);
         aTag.click();
         aTag.remove();
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Download Success',
+            showConfirmButton: false,
+            timer: 2000
+          })
+        
     }
     return (
-        <div className='relative ' id='about'>
+        <div className='relative py-10' id='about'>
             
             <div className="h-full">
                 <div className="rounded-full filter blur-3xl absolute top-0 left-0 h-96 w-96  bg-gradient-to-l from-blue-500 to-sky-400   opacity-30 "></div>

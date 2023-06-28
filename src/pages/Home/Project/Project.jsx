@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Project = () => {
     return (
-        <div className="mx-auto w-11/12 sm:max-w-screen-xl py-10">
+        <div className="mx-auto w-11/12 sm:max-w-screen-xl py-10 " id="project">
             <h2 className='text-center text-2xl pb-10 font-bold' >My Project</h2>
             <div className="">
                 <Swiper

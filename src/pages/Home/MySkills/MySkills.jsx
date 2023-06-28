@@ -2,7 +2,7 @@
 
 const MySkills = () => {
     return (
-        <div className="relative">
+        <div className="relative " id="skills">
             <div className="">
                 <div className="rounded-full filter blur-3xl absolute top-0 right-0 h-96 w-96  bg-gradient-to-l  from-violet-600 to-indigo-800   opacity-10 "></div>
                 <div className="rounded-full filter blur-3xl absolute top-0 left-0 h-96 w-96 -rotate-45   bg-gradient-to-r from-violet-600 to-indigo-800   opacity-10 "></div>
