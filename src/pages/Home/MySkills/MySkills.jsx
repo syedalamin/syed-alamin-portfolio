@@ -3,13 +3,13 @@
 const MySkills = () => {
     return (
         <div className="relative " id="skills">
-            <div className="">
+            {/* <div className="">
                 <div className="rounded-full filter blur-3xl absolute top-0 right-0 h-96 w-96  bg-gradient-to-l  from-violet-600 to-indigo-800   opacity-10 "></div>
                 <div className="rounded-full filter blur-3xl absolute top-0 left-0 h-96 w-96 -rotate-45   bg-gradient-to-r from-violet-600 to-indigo-800   opacity-10 "></div>
-            </div>
+            </div> */}
             <div className="sm:max-w-screen-xl mx-auto  w-11/12 py-10 ">
                 <h2 className='text-center text-2xl pb-10 font-bold'>My Skills</h2>
-                <div className="grid md:grid-cols-4 lg:grid-cols-7 gap-5 grid-cols-3">
+                <div className="grid md:grid-cols-4 lg:grid-cols-7 gap-5 grid-cols-2">
                     <div className="flex items-center justify-center">
                         <div className="bg-[#8193c2] hover:-translate-y-2 duration-500  px-10 py-5 backdrop-filter backdrop-blur-sm bg-opacity-10 border rounded-md ">
                             <img className="w-10 mx-auto" src="https://i.ibb.co/9sbPwkv/html5-13.png" alt="" />

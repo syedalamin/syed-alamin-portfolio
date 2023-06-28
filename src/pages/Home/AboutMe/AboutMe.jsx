@@ -7,10 +7,10 @@ const AboutMe = () => {
     return (
         <div className='relative py-10' id='about'>
             
-            <div className="h-full">
+            {/* <div className="h-full">
                 <div className="rounded-full filter blur-3xl absolute top-0 left-0 h-96 w-96  bg-gradient-to-l from-blue-500 to-sky-400   opacity-30 "></div>
                 <div className="rounded-full filter blur-3xl absolute top-24 right-28 h-96 w-96   bg-gradient-to-r from-violet-600 to-indigo-800  opacity-10 "></div>
-            </div>
+            </div> */}
             <div className="mx-auto max-w-screen-xl pb-10">
                 <h2 className='text-center text-2xl pb-10 font-bold' >About Me</h2>
                 <div className="grid sm:grid-cols-2 w-11/12 mx-auto">

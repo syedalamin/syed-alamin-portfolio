@@ -21,24 +21,31 @@ const NavBar = () => {
     }, []);
 
     const navOptions = <>
-        <li><Link activeClass="active"
-            className="hover:text-[#00acee]"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500} to="banner">Home</Link></li>
-        <li><Link activeClass="active"
-            className="hover:text-[#00acee]"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500} to="about">About</Link></li>
-        <li><Link activeClass="active"
-            className="hover:text-[#00acee]"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500} to="skills">Skills</Link></li>
+        <li>
+            <Link activeClass="active"
+                className="hover:text-[#00acee]"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500} to="banner">Home
+            </Link>
+        </li>
+        <li>
+            <Link activeClass="active"
+                className="hover:text-[#00acee]"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500} to="about">About
+            </Link>
+        </li>
+        <li>
+            <Link activeClass="active"
+                className="hover:text-[#00acee]"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500} to="skills">Skills</Link></li>
         <li><Link activeClass="active"
             className="hover:text-[#00acee]"
             spy={true}
@@ -53,9 +60,9 @@ const NavBar = () => {
             duration={500} to="contact">Contact</Link></li>
     </>
     return (
-        <div className={`fixed w-full  z-10 top-0 text-white  transition duration-700 ease-in-out ${isScrolled ? 'bg-[#0b1120] shadow-lg shadow-indigo-800/20' : 'bg-transparent'} `} >
+        <div className={`fixed w-screen  z-10 top-0 text-white  transition duration-700 ease-in-out ${isScrolled ? 'bg-[#0b1120] shadow-lg shadow-indigo-800/20' : 'bg-transparent'} `} >
             <div className="max-w-screen-xl mx-auto">
-                <div className="navbar  ">
+                <div className="navbar w-full ">
                     <div className="navbar-start">
                         <div className="dropdown">
                             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -65,7 +72,7 @@ const NavBar = () => {
                                 {navOptions}
                             </ul>
                         </div>
-                        <h2 className="text-2xl font-bold">Syed Alamin</h2>
+                        <h2 className="sm:text-2xl font-bold">Syed Alamin</h2>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
@@ -77,7 +84,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={500} to="contact"><button className="bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 border   rounded-md py-2 px-5">LETS TALK</button></Link>
+                            duration={500} to="contact"><button className="bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 border  rounded-md sm:py-2 py-1  px-2 sm:px-5">Lets Talk</button></Link>
                     </div>
                 </div>
             </div>

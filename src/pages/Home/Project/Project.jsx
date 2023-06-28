@@ -11,10 +11,10 @@ import { Link } from "react-router-dom";
 const Project = () => {
     return (
         <div className="relative">
-            <div className="h-full">
+            {/* <div className="h-full">
                 <div className="rounded-full filter blur-3xl absolute top-0 left-0 h-96 w-96  bg-gradient-to-l from-blue-500 to-sky-400   opacity-30 "></div>
                 <div className="rounded-full filter blur-3xl absolute top-24 right-28 h-96 w-96   bg-gradient-to-r from-violet-600 to-indigo-800  opacity-10 "></div>
-            </div>
+            </div> */}
             <div className="mx-auto w-11/12 sm:max-w-screen-xl py-10 " id="project">
                 <h2 className='text-center text-2xl pb-10 font-bold' >My Project</h2>
                 <div className="">
