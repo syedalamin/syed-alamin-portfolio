@@ -24,7 +24,7 @@ const Banner = () => {
         <div className="relative " id="banner">
             <div className="w-full">
                 <div className="rounded-full filter blur-3xl absolute top-0 right-0 h-96 sm:w-96  w-full bg-gradient-to-l from-blue-500 to-sky-400   opacity-30 "></div>
-                <div className="rounded-full filter blur-3xl absolute sm:top-[120px] top-96 left-0 h-96 sm:w-96  w-full sm:-rotate-45   bg-gradient-to-r from-violet-600 to-indigo-800   opacity-10 "></div>
+                <div className="rounded-full filter blur-3xl absolute sm:top-[120px] top-9 left-0 h-96 sm:w-96  w-full sm:-rotate-45   bg-gradient-to-r from-violet-600 to-indigo-800   opacity-10 "></div>
             </div>
             <div className="pt-12 sm:max-w-screen-xl w-11/12 mx-auto ">
                 <div className="sm:grid sm:grid-cols-2 flex  flex-col-reverse ">
@@ -39,11 +39,11 @@ const Banner = () => {
                     <div>
                         <div className="flex items-center justify-center  sm:h-screen relative ">
                             <div>
-                                <img src=" https://i.ibb.co/vQD44mr/firebase.png" className="sm:w-14 w-10  absolute sm:top-24 top-7 sm:right-60 right-32 animate-bounce  " alt="" />
-                                <img src="https://i.ibb.co/wBsMjk6/React.png" className="sm:w-12 w-8 absolute top-30 sm:right-20 right-12 animate-bounce " alt="" />
-                                <img src=" https://i.ibb.co/pwYkzqX/express.png  " className="sm:w-20 w-16 absolute bottom-10 sm:bottom-28 sm:right-44 right-28 animate-bounce " alt="" />
-                                <img src="https://i.ibb.co/pjQTLYx/mongodb.webp" className="sm:w-14 w-10 absolute sm:top-48 top-24 sm:left-24  left-16 animate-bounce " alt="" />
-                                <img src="https://i.ibb.co/T2djKjv/node.png" className="sm:w-10 w-7 absolute sm:bottom-40 bottom-24 sm:left-32 left-20 animate-bounce " alt="" />
+                                <img src=" https://i.ibb.co/vQD44mr/firebase.png" className="sm:w-14 w-10  absolute sm:top-24 top-7 sm:right-60 right-32  " alt="" />
+                                <img src="https://i.ibb.co/wBsMjk6/React.png" className="sm:w-12 w-8 absolute top-30 sm:right-20 right-12 " alt="" />
+                                <img src=" https://i.ibb.co/pwYkzqX/express.png  " className="sm:w-20 w-16 absolute bottom-10 sm:bottom-28 sm:right-44 right-28 " alt="" />
+                                <img src="https://i.ibb.co/pjQTLYx/mongodb.webp" className="sm:w-14 w-10 absolute sm:top-48 top-24 sm:left-24  left-16 " alt="" />
+                                <img src="https://i.ibb.co/T2djKjv/node.png" className="sm:w-10 w-7 absolute sm:bottom-40 bottom-24 sm:left-32 left-20 " alt="" />
                             </div>
                             <div className=" ">
                                 <img src="https://i.ibb.co/GFqQxZG/Untitled-design-removebg-preview.png" className="sm:min-w-full w-11/12  mx-auto rounded-full" alt="Syed Alamin" />
