@@ -8,6 +8,11 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
 import { Link } from "react-router-dom";
 
+import chef from '../../../assets/Project/chef.png';
+import toys from '../../../assets/Project/toys.png';
+import tea from '../../../assets/Project/tea.png';
+import dream from '../../../assets/Project/dream.png';
+
 const Project = () => {
     return (
         <div className="relative ">
@@ -47,7 +52,7 @@ const Project = () => {
                             <div className="card w-fit bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 overflow-auto shadow-xl">
                                 <div className="relative max-w-full h-72 overflow-hidden">
                                     <div className="h-max w-full transition-transform duration-[3000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)]">
-                                        <img src="https://i.ibb.co/wK8TyBx/screencapture-chef-tutul-bd-web-app-2023-06-27-17-45-17.png" alt="Shoes" className="w-full object-cover object-top " />
+                                        <img src={chef} alt="Shoes" className="w-full object-cover object-top " />
                                     </div>
                                 </div>
                                 <div className=" mx-auto w-10/12 py-4 text-center">
@@ -63,7 +68,7 @@ const Project = () => {
                             <div className="card w-fit bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 overflow-auto shadow-xl">
                                 <div className="relative max-w-full h-72 overflow-hidden">
                                     <div className="h-max w-full transition-transform duration-[3000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)]">
-                                        <img src="https://i.ibb.co/chfwRTM/screencapture-action-figure-toys-web-app-2023-06-27-18-27-52.png" alt="Shoes" className="w-full object-cover object-top " />
+                                        <img src={toys} alt="Shoes" className="w-full object-cover object-top " />
                                     </div>
                                 </div>
                                 <div className=" mx-auto w-10/12 py-4 text-center">
@@ -79,7 +84,7 @@ const Project = () => {
                             <div className="card w-fit bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 overflow-auto shadow-xl">
                                 <div className="relative max-w-full h-72 overflow-hidden">
                                     <div className="h-max w-full transition-transform duration-[3000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)]">
-                                        <img src="https://i.ibb.co/hYGT5s4/screencapture-sa-tea-house-netlify-app-2023-06-27-16-28-11.png" alt="Shoes" className="w-full object-cover object-top " />
+                                        <img src={tea} alt="Shoes" className="w-full object-cover object-top " />
                                     </div>
                                 </div>
                                 <div className=" mx-auto w-10/12 py-4 text-center">
@@ -94,7 +99,7 @@ const Project = () => {
                             <div className="card w-fit bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-10 overflow-auto shadow-xl">
                                 <div className="relative max-w-full h-72 overflow-hidden">
                                     <div className="h-max w-full transition-transform duration-[3000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)]">
-                                        <img src="https://i.ibb.co/3zxbhjy/screencapture-illustrious-seahorse-34b9fa-netlify-app-2023-06-27-16-27-48.png" alt="Shoes" className="w-full object-cover object-top " />
+                                        <img src={dream} alt="Shoes" className="w-full object-cover object-top " />
                                     </div>
                                 </div>
                                 <div className=" mx-auto w-10/12 py-4 text-center">
