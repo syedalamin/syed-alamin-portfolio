@@ -1,7 +1,12 @@
 import { HiDownload } from "react-icons/hi";
 import Swal from 'sweetalert2';
 const PDF_FILE_URL = 'https://syed-alamin-portfolio.vercel.app/SyedAlaminResume.pdf';
-import banner from '../../../assets/Section/Banner.png'
+import banner from '../../../assets/Section/Banner.png';
+import react from '../../../assets/Skills/React.png';
+import firebase from '../../../assets/Skills/firebase.png';
+import mongodb from '../../../assets/Skills/mongodb.png';
+import express from '../../../assets/Skills/express.png';
+import node from '../../../assets/Skills/node.png';
 const Banner = () => {
     const downloadFileAtURL = (url)=>{
         const fileName = url.split('/').pop();
@@ -39,11 +44,11 @@ const Banner = () => {
                     <div>
                         <div className="flex items-center justify-center  sm:h-screen relative ">
                             <div>
-                                <img src=" https://i.ibb.co/vQD44mr/firebase.png" className="sm:w-14 w-10  absolute sm:top-24 top-7 sm:right-60 right-32  " alt="" />
-                                <img src="https://i.ibb.co/wBsMjk6/React.png" className="sm:w-12 w-8 absolute top-30 sm:right-20 right-12 " alt="" />
-                                <img src=" https://i.ibb.co/pwYkzqX/express.png  " className="sm:w-20 w-16 absolute bottom-10 sm:bottom-28 sm:right-44 right-28 " alt="" />
-                                <img src="https://i.ibb.co/pjQTLYx/mongodb.webp" className="sm:w-14 w-10 absolute sm:top-48 top-24 sm:left-24  left-16 " alt="" />
-                                <img src="https://i.ibb.co/T2djKjv/node.png" className="sm:w-10 w-7 absolute sm:bottom-40 bottom-24 sm:left-32 left-20 " alt="" />
+                                <img src={firebase} className="sm:w-14 w-10  absolute sm:top-36 top-7 sm:right-60 right-32  " alt="" />
+                                <img src={react} className="sm:w-12 w-8 absolute top-30 sm:right-28 right-12 " alt="" />
+                                <img src={express} className="sm:w-20 w-16 absolute bottom-10 sm:bottom-40 sm:right-56 right-28 " alt="" />
+                                <img src={mongodb} className="sm:w-14 w-10 absolute sm:top-52 top-24 sm:left-36  left-16 " alt="" />
+                                <img src={node} className="sm:w-10 w-7 absolute sm:bottom-60 bottom-24 sm:left-32 left-20 " alt="" />
                             </div>
                             <div className=" ">
                                 <img src={banner} className=" w-11/12  mx-auto rounded-full" alt="Syed Alamin" />
