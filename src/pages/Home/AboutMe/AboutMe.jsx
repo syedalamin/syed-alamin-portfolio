@@ -1,7 +1,7 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import Tilt from 'react-parallax-tilt';
-
+import about from '../../../assets/Section/About.png'
 const AboutMe = () => {
     
     return (
@@ -15,7 +15,7 @@ const AboutMe = () => {
                 <div className="grid sm:grid-cols-2 w-11/12 mx-auto">
                     <Tilt className="parallax-effect" perspective={2000}>
                         <div className="inner-element">
-                            <img src="https://i.ibb.co/n8D4zqb/sasa.png" className="w-7/12 drop-shadow-lg grayscale hover:grayscale-0  mx-auto bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-20  rounded-md" alt="" />
+                            <img src={about} className="w-7/12 drop-shadow-lg grayscale hover:grayscale-0  mx-auto bg-[#8193c2] backdrop-filter backdrop-blur-sm bg-opacity-20  rounded-md" alt="" />
                         </div>
                     </Tilt>
                     <div className='flex items-center py-5'>

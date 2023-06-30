@@ -1,7 +1,7 @@
 import { HiDownload } from "react-icons/hi";
 import Swal from 'sweetalert2';
 const PDF_FILE_URL = 'https://syed-alamin-portfolio.vercel.app/SyedAlaminResume.pdf';
-
+import banner from '../../../assets/Section/Banner.png'
 const Banner = () => {
     const downloadFileAtURL = (url)=>{
         const fileName = url.split('/').pop();
@@ -46,7 +46,7 @@ const Banner = () => {
                                 <img src="https://i.ibb.co/T2djKjv/node.png" className="sm:w-10 w-7 absolute sm:bottom-40 bottom-24 sm:left-32 left-20 " alt="" />
                             </div>
                             <div className=" ">
-                                <img src="https://i.ibb.co/GFqQxZG/Untitled-design-removebg-preview.png" className="sm:min-w-full w-11/12  mx-auto rounded-full" alt="Syed Alamin" />
+                                <img src={banner} className=" w-11/12  mx-auto rounded-full" alt="Syed Alamin" />
                             </div>
                         </div>
                     </div>
