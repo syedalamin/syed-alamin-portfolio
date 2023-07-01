@@ -44,11 +44,11 @@ const Banner = () => {
                     <div>
                         <div className="flex items-center justify-center  sm:h-screen relative ">
                             <div>
-                                <img src={firebase} className="sm:w-14 w-10  absolute sm:top-36 top-7 sm:right-60 right-32  " alt="" />
-                                <img src={react} className="sm:w-12 w-8 absolute top-30 sm:right-28 right-12 " alt="" />
-                                <img src={express} className="sm:w-20 w-16 absolute bottom-10 sm:bottom-40 sm:right-56 right-28 " alt="" />
-                                <img src={mongodb} className="sm:w-14 w-10 absolute sm:top-52 top-24 sm:left-36  left-16 " alt="" />
-                                <img src={node} className="sm:w-10 w-7 absolute sm:bottom-60 bottom-24 sm:left-32 left-20 " alt="" />
+                                <img src={firebase} className="sm:w-14 w-10  absolute sm:top-28 top-7 sm:right-60 right-32  " alt="" />
+                                <img src={react} className="sm:w-12 w-8 absolute top-30 sm:right-24 right-12 " alt="" />
+                                <img src={express} className="sm:w-20 w-16 absolute bottom-10 sm:bottom-32 sm:right-56 right-28 " alt="" />
+                                <img src={mongodb} className="sm:w-14 w-10 absolute sm:top-48 top-24 sm:left-36  left-16 " alt="" />
+                                <img src={node} className="sm:w-10 w-7 absolute sm:bottom-52 bottom-24 sm:left-32 left-20 " alt="" />
                             </div>
                             <div className=" ">
                                 <img src={banner} className=" w-11/12  mx-auto rounded-full" alt="Syed Alamin" />
